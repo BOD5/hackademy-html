@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;  
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+form {
+  padding: 10px;
+  border: 2px solid blue;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

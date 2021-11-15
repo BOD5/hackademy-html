@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Survey</title>
+</head>
+<body>
+  <h1 id="title">This is form about nothing</h1>
+  <p id="description">Just a simple form</p>
+  <div class="wrapper">
+    <form id="survey-form">
+      <label for="name" id="name-label">input your name</label>
+      <input type="text" name="name" id="name" placeholder="input your name">
+      <label for="email" id="email-label">input your email</label>
+      <input type="text" name="email" id="email" placeholder="input your email">
+      <label for="number" id="number-label">input your number</label>
+      <input type="text" name="number" id="number" placeholder="input your number">
+      <label for="age">input your age</label>
+      <input type="number" name="age" id="age" min="0" max="150" placeholder="input your age">
+      <label for="dropdown">Select your country</label>
+      <select name="country" id="dropdown">
+        <option value="UA">Ukraine</option>
+        <option value="RU">Russian</option>
+        <option value="FR">France</option>
+        <option value="UK">United Kingdom</option>
+      </select>
+      <p>Please select your preferred contact method:</p>
+      <div>
+        <input type="radio" id="choiceEmail"
+        name="contact" value="email">
+        <label for="choiceEmail">Email</label>
+        <input type="radio" id="choicePhone"
+        name="contact" value="phone">
+        <label for="choicePhone">Phone</label>
+        <input type="radio" id="choiceMail"
+        name="contact" value="mail">
+        <label for="choiceMail">Mail</label>
+      </div>
+      <div>
+        <input type="checkbox" id="license" name="license" checked>
+        <label for="license">I agree to the data usage rules</label>
+      </div>
+      <div>
+        <input type="checkbox" id="spam" name="spam">
+        <label for="spam">spam me at email</label>
+      </div>
+      <label for="comments">If you want you can add some comments</label>
+      <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+      <input type="submit" value="send data" id="submit">
+    </form>
+  </div>
+</body>
+</html>
