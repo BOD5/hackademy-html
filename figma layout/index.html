@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Landing</title>
+</head>
+<body>
+  <header>
+    <object type="image/svg+xml" data="./static/Mountain.svg" width="200" height="80" class="logo">
+      Your browser does not support SVG
+   </object>
+   <div class="menu">
+     <button class="menu-item">
+      Про нас
+     </button>
+     <button class="menu-item">
+       Новини
+     </button>
+     <button class="menu-item">
+       Контакти
+     </button>
+   </div>
+  </header>
+  <form>
+    <div class="center">
+      <h1>В які гори відправляємось?</h1>
+      <div class="form-item stylized">
+        <select name="mountains" id="mountains" onchange="showForm()">
+          <option value="Карпати">Карпати</option>
+          <option value="Альпи">Альпи</option>
+          <option value="Гімалаї">Гімалаї</option>
+          <option value="Кавказ">Кавказ</option>
+        </select>
+      </div>
+    </div>
+    <div class="blur" id="blur">
+      <div class="center">
+        <h2 id="text-label"></h2>
+        <div class="form-item stylized">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-input"
+          >
+          <label for="name" class="form-label">ПІБ</label>
+        </div>
+        <div class="form-item stylized">
+          <input
+            type="text"
+            name="email"
+            id="email"
+            class="form-input"
+          >
+          <label for="email" class="form-label">email</label>
+        </div>
+        <div class="form-item stylized">
+          <input
+            type="text"
+            name="date"
+            id="date"
+            class="form-input"
+          >
+          <label for="date" class="form-label">дата</label>
+        </div>
+        <div class="buttons">
+          <button class="stylized" type="submit" onclick="good()">Прийняти</button>
+          <button class="stylized" type="reset" onclick="back()">Змінити вибір</button>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div >
+
+  </div>
+</body>
+<script src="./script.js"></script>
+</html>
